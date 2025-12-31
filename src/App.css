@@ -1,0 +1,11 @@
+/* App wrapper - minimal styling as pages handle their own backgrounds */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    min-height: 100vh;
+    width: 100%;
+}

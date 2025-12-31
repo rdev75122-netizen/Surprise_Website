@@ -1,0 +1,46 @@
+🎄💝 QUICK START GUIDE 💝🎄
+================================
+
+📌 YOU ARE HERE: d:\New Year Memories\memories-website
+
+✅ INSTALLATION COMPLETE!
+
+🚀 TO START THE WEBSITE:
+------------------------
+1. Open terminal/command prompt
+2. Navigate to: cd "d:\New Year Memories\memories-website"
+3. Run: npm run dev
+4. Open browser to: http://localhost:5173
+
+📸 TO ADD YOUR IMAGES:
+---------------------
+1. Place your images in: public/images/
+2. Name them: memory1.jpg, memory2.jpg, memory3.jpg, etc.
+3. The website will automatically load them!
+
+✏️ TO CUSTOMIZE TEXT ON CARDS:
+------------------------------
+1. Open: src/pages/SurprisePage.jsx
+2. Find the 'memoryCards' array (around line 10)
+3. Change the 'text' property for each card
+4. Example:
+   { id: 1, image: '/images/memory1.jpg', text: 'Your sweet message here 💕' }
+
+🎨 WHAT YOU GET:
+---------------
+✨ Beautiful welcome page with name inputs
+✨ Animated snowflakes and floating hearts
+✨ Double-click gift box with magical opening
+✨ Flip cards with your images and text
+✨ Romantic Christmas/New Year theme
+✨ Fully responsive (works on phone, tablet, desktop)
+
+💡 TIPS:
+-------
+- For best results, use images that are landscape (horizontal)
+- You can add as many cards as you want!
+- The website remembers names between pages
+- Cards flip to show text when clicked
+- Click again to close the card popup
+
+🎁 ENJOY YOUR MAGICAL MEMORIES WEBSITE! 🎁

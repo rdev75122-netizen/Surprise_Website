@@ -1,0 +1,366 @@
+.welcome-page {
+    min-height: 100vh;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(255, 0, 150, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(0, 200, 255, 0.1) 0%, transparent 50%);
+    animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.snowflakes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10%;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5em;
+    animation: fall linear infinite;
+}
+
+.snowflake:nth-child(1) {
+    left: 10%;
+    animation-duration: 10s;
+    animation-delay: 0s;
+}
+
+.snowflake:nth-child(2) {
+    left: 20%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.snowflake:nth-child(3) {
+    left: 30%;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.snowflake:nth-child(4) {
+    left: 40%;
+    animation-duration: 11s;
+    animation-delay: 3s;
+}
+
+.snowflake:nth-child(5) {
+    left: 50%;
+    animation-duration: 9s;
+    animation-delay: 0.5s;
+}
+
+.snowflake:nth-child(6) {
+    left: 60%;
+    animation-duration: 13s;
+    animation-delay: 2.5s;
+}
+
+.snowflake:nth-child(7) {
+    left: 70%;
+    animation-duration: 10s;
+    animation-delay: 1.5s;
+}
+
+.snowflake:nth-child(8) {
+    left: 80%;
+    animation-duration: 11s;
+    animation-delay: 0s;
+}
+
+.snowflake:nth-child(9) {
+    left: 90%;
+    animation-duration: 9s;
+    animation-delay: 2s;
+}
+
+.snowflake:nth-child(10) {
+    left: 5%;
+    animation-duration: 12s;
+    animation-delay: 1s;
+}
+
+.snowflake:nth-child(11) {
+    left: 15%;
+    animation-duration: 10s;
+    animation-delay: 3s;
+}
+
+.snowflake:nth-child(12) {
+    left: 25%;
+    animation-duration: 11s;
+    animation-delay: 0.5s;
+}
+
+.snowflake:nth-child(13) {
+    left: 35%;
+    animation-duration: 9s;
+    animation-delay: 2.5s;
+}
+
+.snowflake:nth-child(14) {
+    left: 45%;
+    animation-duration: 13s;
+    animation-delay: 1.5s;
+}
+
+.snowflake:nth-child(15) {
+    left: 55%;
+    animation-duration: 8s;
+    animation-delay: 0s;
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+        transform: translateX(0) rotate(0deg);
+    }
+
+    100% {
+        top: 110%;
+        transform: translateX(100px) rotate(360deg);
+    }
+}
+
+.welcome-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 60px 50px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    z-index: 10;
+}
+
+.welcome-title {
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.welcome-title .animated-gradient-text {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.welcome-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.welcome-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    .welcome-page {
+        padding: 20px 15px;
+    }
+
+    .welcome-container {
+        padding: 40px 30px;
+        max-width: 90%;
+    }
+
+    .welcome-title {
+        font-size: 2em;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .welcome-subtitle {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-container {
+        padding: 30px 20px;
+    }
+
+    .welcome-title {
+        font-size: 1.8em;
+    }
+
+    .welcome-subtitle {
+        font-size: 1em;
+    }
+
+    .welcome-form {
+        gap: 20px;
+    }
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group label {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.name-input {
+    padding: 15px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.name-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.name-input:focus {
+    border-color: rgba(255, 100, 200, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 20px rgba(255, 100, 200, 0.3);
+}
+
+.error-message {
+    color: #ff6b9d;
+    text-align: center;
+    font-size: 1em;
+    margin-top: -10px;
+}
+
+.submit-button {
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #ff6b9d 0%, #c06c84 100%);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 107, 157, 0.3);
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+}
+
+.hearts {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    font-size: 2em;
+}
+
+.heart:nth-child(1) {
+    left: 10%;
+    top: 20%;
+}
+
+.heart:nth-child(2) {
+    left: 85%;
+    top: 15%;
+}
+
+.heart:nth-child(3) {
+    left: 15%;
+    top: 70%;
+}
+
+.heart:nth-child(4) {
+    left: 90%;
+    top: 75%;
+}
+
+.heart:nth-child(5) {
+    left: 5%;
+    top: 45%;
+}
+
+.heart:nth-child(6) {
+    left: 92%;
+    top: 45%;
+}
+
+.heart:nth-child(7) {
+    left: 50%;
+    top: 10%;
+}
+
+.heart:nth-child(8) {
+    left: 50%;
+    top: 85%;
+}
+
+@media (max-width: 768px) {
+    .welcome-container {
+        padding: 40px 30px;
+    }
+
+    .welcome-title {
+        font-size: 2em;
+    }
+
+    .welcome-subtitle {
+        font-size: 1em;
+    }
+}

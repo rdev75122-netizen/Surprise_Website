@@ -1,0 +1,143 @@
+🖼️ HOW TO ADD YOUR IMAGES 🖼️
+================================
+
+STEP-BY-STEP GUIDE:
+
+1️⃣ LOCATE THE IMAGES FOLDER
+----------------------------
+Path: d:\New Year Memories\memories-website\public\images\
+
+(The folder is already created for you!)
+
+
+2️⃣ PREPARE YOUR IMAGES
+-----------------------
+✅ Supported formats: .jpg, .jpeg, .png, .gif
+✅ Recommended: Landscape/horizontal orientation
+✅ Suggested size: 800x600 pixels or similar ratio
+✅ File size: Keep under 2MB each for fast loading
+
+
+3️⃣ NAME YOUR IMAGES
+--------------------
+Copy your images to the folder and rename them:
+
+memory1.jpg  ← Your first memory
+memory2.jpg  ← Your second memory
+memory3.jpg  ← Your third memory
+memory4.jpg  ← Your fourth memory
+memory5.jpg  ← Your fifth memory
+memory6.jpg  ← Your sixth memory
+
+(You can use .png or .jpeg too!)
+
+
+4️⃣ ADD MORE CARDS (OPTIONAL)
+-----------------------------
+Want more than 6 cards? Easy!
+
+a) Add more images:
+   memory7.jpg
+   memory8.jpg
+   memory9.jpg
+   ... and so on
+
+b) Open: src\pages\SurprisePage.jsx
+
+c) Find the memoryCards array (around line 10)
+
+d) Add more card objects:
+   { id: 7, image: '/images/memory7.jpg', text: 'Seventh memory 💝' },
+   { id: 8, image: '/images/memory8.jpg', text: 'Eighth memory ✨' },
+
+
+5️⃣ EXAMPLE SETUP
+-----------------
+Let's say you want 9 cards total:
+
+Images folder should have:
+📁 public/images/
+   📷 memory1.jpg
+   📷 memory2.jpg
+   📷 memory3.jpg
+   📷 memory4.jpg
+   📷 memory5.jpg
+   📷 memory6.jpg
+   📷 memory7.jpg
+   📷 memory8.jpg
+   📷 memory9.jpg
+
+In SurprisePage.jsx:
+const memoryCards = [
+  { id: 1, image: '/images/memory1.jpg', text: 'Beach day 🏖️' },
+  { id: 2, image: '/images/memory2.jpg', text: 'First kiss 💋' },
+  { id: 3, image: '/images/memory3.jpg', text: 'Movie night 🎬' },
+  { id: 4, image: '/images/memory4.jpg', text: 'Sunset walk 🌅' },
+  { id: 5, image: '/images/memory5.jpg', text: 'Cooking together 👨‍🍳' },
+  { id: 6, image: '/images/memory6.jpg', text: 'Road trip 🚗' },
+  { id: 7, image: '/images/memory7.jpg', text: 'Concert night 🎵' },
+  { id: 8, image: '/images/memory8.jpg', text: 'Camping trip ⛺' },
+  { id: 9, image: '/images/memory9.jpg', text: 'New Year 2025 🎆' },
+];
+
+
+6️⃣ TESTING YOUR IMAGES
+-----------------------
+After adding images:
+
+1. Save all files
+2. Refresh your browser (http://localhost:5173/)
+3. Go through the welcome page
+4. Double-click the gift box
+5. See your images appear as cards!
+
+
+📝 TIPS & TRICKS
+----------------
+
+✅ Image not showing?
+   - Check the filename matches exactly (case-sensitive!)
+   - Make sure it's in public/images/ folder
+   - Try refreshing the browser (Ctrl + F5)
+
+✅ Image looks stretched or weird?
+   - Use landscape/horizontal images (4:3 or 16:9 ratio)
+   - Crop images to similar dimensions
+
+✅ Website loading slow?
+   - Compress your images before adding them
+   - Use tools like: TinyPNG.com or Squoosh.app
+   - Aim for under 500KB per image
+
+✅ Want different layout?
+   - 3 cards per row: Default (desktop)
+   - 2 cards per row: Automatic on tablets
+   - 1 card per row: Automatic on phones
+
+
+🎨 RECOMMENDED IMAGE TYPES
+---------------------------
+
+Perfect for this website:
+✨ Photos of you two together
+✨ Special moments/events
+✨ Places you've visited
+✨ Gifts exchanged
+✨ Celebration pictures
+✨ Fun selfies
+✨ Romantic sunsets
+✨ Holiday photos
+
+
+🔄 WHAT HAPPENS AUTOMATICALLY
+------------------------------
+
+The website will:
+✅ Display a placeholder if image not found
+✅ Resize images to fit cards perfectly
+✅ Add beautiful hover effects
+✅ Create smooth flip animations
+✅ Show full-size popup when clicked
+
+
+That's it! Your images will bring the memories to life! 📸💝
