@@ -139,8 +139,6 @@
     left: 0;
 }
 
-z-index: 1;
-}
 
 .explosion-particles {
     position: absolute;
@@ -151,83 +149,87 @@ z-index: 1;
     z-index: 200;
 }
 
+/* Box side panels for GiftBox2 */
+.box-left {
+    width: 100px;
+    height: 130px;
+    top: 0;
+    left: -50px;
+}
+
+.box-right {
+    width: 100px;
+    height: 130px;
+    top: 0;
+    right: -50px;
+}
+
+/* Base ribbons for GiftBox2 */
+.base-ribbon-h {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.base-ribbon-v {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 100%;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+/* Particles used by GiftBox and GiftBox2 */
+.particle {
+    position: absolute;
+    font-size: 1.5em;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+.gift-box-container:hover .gift-box {
+    filter: brightness(1.1);
+}
+
+.gift-box-container:active .gift-box {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    .gift-box-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .gift-lid {
+        top: 50px;
+        width: 160px;
+        height: 40px;
+    }
+
+    .gift-base {
+        top: 90px;
+        width: 160px;
+        height: 100px;
+    }
+
+    .bow {
+        width: 60px;
+        height: 40px;
+    }
+}
+
 .explosion-particle {
     position: absolute;
     font-size: 1.8em;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
     pointer-events: none;
-
-    .box-left {
-        width: 100px;
-        height: 130px;
-        top: 0;
-        left: -50px;
-    }
-
-    .box-right {
-        width: 100px;
-        height: 130px;
-        top: 0;
-        right: -50px;
-    }
-
-    .base-ribbon-h {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 100%;
-        height: 25px;
-        background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .base-ribbon-v {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 25px;
-        height: 100%;
-        width: 0;
-        height: 0;
-        z-index: 100;
-    }
-
-    .particle {
-        position: absolute;
-        font-size: 1.5em;
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
-    }
-
-    .gift-box-container:hover .gift-box {
-        filter: brightness(1.1);
-    }
-
-    .gift-box-container:active .gift-box {
-        transform: scale(0.95);
-    }
-
-    @media (max-width: 768px) {
-        .gift-box-container {
-            width: 200px;
-            height: 200px;
-        }
-
-        .gift-lid {
-            top: 50px;
-            width: 160px;
-            height: 40px;
-        }
-
-        .gift-base {
-            top: 90px;
-            width: 160px;
-            height: 100px;
-        }
-
-        .bow {
-            width: 60px;
-            height: 40px;
-        }
-    }
+}
