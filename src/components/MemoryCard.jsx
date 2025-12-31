@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import './MemoryCard.css';
+import '/MemoryCard.css';
 
 const MemoryCard = ({ card, index, isSelected, onSelect }) => {
     return (
