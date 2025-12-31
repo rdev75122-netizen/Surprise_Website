@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ConfettiExplosion from 'react-confetti-explosion';
-import '/GiftBox.css';
+import './GiftBox.css';
 
 const GiftBox = ({ onOpen }) => {
     const [clicks, setClicks] = useState(0);

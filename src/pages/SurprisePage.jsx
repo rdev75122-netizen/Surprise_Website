@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import GiftBox from '../components/GiftBox';
 import MemoryCard from '../components/MemoryCard';
 import GradientText from '../components/GradientText';
-import '/SurprisePage.css';
+import './SurprisePage.css';
 
 const SurprisePage = ({ names }) => {
     const [isBoxOpened, setIsBoxOpened] = useState(false);

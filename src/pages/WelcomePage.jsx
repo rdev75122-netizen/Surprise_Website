@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import GradientText from '../components/GradientText';
-import '/WelcomePage.css';
+import './WelcomePage.css';
 
 const WelcomePage = ({ onLogin }) => {
     const [name, setName] = useState('');

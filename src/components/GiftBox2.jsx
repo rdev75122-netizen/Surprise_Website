@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import '/GiftBox.css';
+import './GiftBox.css';
 
 const GiftBox = ({ onOpen }) => {
     const [clickCount, setClickCount] = useState(0);

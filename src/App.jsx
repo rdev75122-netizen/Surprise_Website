@@ -3,7 +3,7 @@ import { useState } from 'react';
 import WelcomePage from './pages/WelcomePage';
 import SurprisePage from './pages/SurprisePage';
 import GreetingCardPage from './pages/GreetingCardPage';
-import '/App.css';
+import './App.css';
 
 function App() {
     const [isAuthenticated, setIsAuthenticated] = useState(false);

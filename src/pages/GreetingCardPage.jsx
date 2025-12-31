@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import '/GreetingCardPage.css';
+import './GreetingCardPage.css';
 
 const GreetingCardPage = ({ names }) => {
     const [isOpen, setIsOpen] = useState(false);
